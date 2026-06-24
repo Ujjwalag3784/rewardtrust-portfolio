@@ -21,7 +21,7 @@
 
 ---
 
-**Product Manager:** Ujjwal Agrawal &nbsp;|&nbsp; **Domain:** Fintech × UPI × Rewards
+**Product Manager:** Ujjwal Agrawal &nbsp;|&nbsp; **Domain:** Fintech x UPI x Rewards
 
 </div>
 
@@ -72,7 +72,7 @@ Banks and payment apps built the pipes. Nobody built the window.
 
 ### Methodology
 
-Discovery combined qualitative user interviews with a hand-curated reward rate dataset covering **20 merchants × 8 payment methods = 160 reward rate entries**, each tagged with confidence tiers (HIGH / MEDIUM / LOW). The research focused on how users perceive, discover, and act on rewards across the full payment journey.
+Discovery combined qualitative user interviews with a hand-curated reward rate dataset covering **20 merchants x 8 payment methods = 160 reward rate entries**, each tagged with confidence tiers (HIGH / MEDIUM / LOW). The research focused on how users perceive, discover, and act on rewards across the full payment journey.
 
 ### Research Synthesis
 
@@ -267,9 +267,9 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 | **Merchants** | 20 (Swiggy, Zomato, Amazon, Flipkart, BigBasket, Myntra + more) |
 | **Payment Methods** | 8 (UPI Credit, RuPay, Visa, Mastercard, AMEX, Debit, Wallet, BNPL) |
 | **Total Entries** | 160 reward rate data points |
-| **Data Format** | JSON flat-file (MVP) → Supabase (Phase 2) |
+| **Data Format** | JSON flat-file (MVP) -> Supabase (Phase 2) |
 | **Confidence Tiers** | HIGH (verified) · MEDIUM (inferred) · LOW (estimated) |
-| **Update Protocol** | Manual quarterly audits → automated crawlers (Phase 3) |
+| **Update Protocol** | Manual quarterly audits -> automated crawlers (Phase 3) |
 
 **Download Dataset:** [RewardTrust_Dataset_2025.xlsx](assets/RewardTrust_Dataset_2025.xlsx)
 
@@ -281,18 +281,13 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════╗
-║         REWARD DISCOVERY RATE (RDR)                      ║
-║                                                          ║
-║   % of users who discover their reward within           ║
-║   24 hours of a qualifying transaction                   ║
-║                                                          ║
-║   Baseline:  ~12%                                        ║
-║   MVP Target: 35%                                        ║
-║   12-month:   55%                                        ║
-╚══════════════════════════════════════════════════════════╝
-```
+**Reward Discovery Rate (RDR)** — the percentage of users who discover their reward within 24 hours of a qualifying transaction.
+
+| Stage | RDR Target |
+|---|---|
+| Baseline | ~12% |
+| MVP Target | 35% |
+| 12-month | 55% |
 
 </div>
 
@@ -323,26 +318,11 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 
 ## Technical Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    FRONTEND                             │
-│   React + Vite  │  Tailwind CSS  │  Vercel Hosting     │
-└────────────────────────┬────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────┐
-│                    DATA LAYER                           │
-│   MVP: JSON flat files (160 reward rate entries)        │
-│   Phase 2: Supabase (real-time, scalable)               │
-│   Phase 3: Automated crawlers + ML confidence scoring   │
-└────────────────────────┬────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────┐
-│                    INTEGRATIONS                         │
-│   Phase 2: UPI payment webhooks                        │
-│   Phase 3: Bank API partnerships                        │
-│   Phase 4: B2B API for payment apps                     │
-└─────────────────────────────────────────────────────────┘
-```
+**Frontend:** React + Vite, Tailwind CSS, hosted on Vercel.
+
+**Data Layer:** JSON flat files (160 reward rate entries) for the MVP, migrating to Supabase (real-time, scalable) in Phase 2, with automated crawlers and ML confidence scoring in Phase 3.
+
+**Integrations:** UPI payment webhooks (Phase 2), bank API partnerships (Phase 3), and a B2B API for payment apps (Phase 4).
 
 **Tech Stack:**
 
@@ -357,38 +337,17 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 
 ## Product Roadmap
 
-```
-PHASE 1 — MVP (Current)
-─────────────────────────
-▸ Reward Rate Discovery (20 merchants × 8 methods)
-▸ Confidence-tiered data display
-▸ Dataset Audit Tool
-▸ React + Vercel deployment
-▸ 160-entry JSON dataset
+**Phase 1 — MVP (Current)**
+Reward Rate Discovery (20 merchants x 8 methods), confidence-tiered data display, Dataset Audit Tool, React + Vercel deployment, 160-entry JSON dataset.
 
-PHASE 2 — Post-Transaction (Q3 2025)
-──────────────────────────────────────
-▸ UPI webhook integration for real-time reward tracking
-▸ Push notifications for reward credit/failure
-▸ Supabase migration for dynamic data
-▸ Personalized reward history dashboard
-▸ Reward status tracker (Pending → Credited → Failed)
+**Phase 2 — Post-Transaction (Q3 2025)**
+UPI webhook integration for real-time reward tracking, push notifications for reward credit/failure, Supabase migration for dynamic data, personalized reward history dashboard, reward status tracker (Pending -> Credited -> Failed).
 
-PHASE 3 — Intelligence Layer (Q1 2026)
-────────────────────────────────────────
-▸ ML-powered reward rate crawlers
-▸ Automated confidence score updates
-▸ Merchant anomaly detection
-▸ Predictive reward modeling
-▸ "Best card for this merchant" recommendation engine
+**Phase 3 — Intelligence Layer (Q1 2026)**
+ML-powered reward rate crawlers, automated confidence score updates, merchant anomaly detection, predictive reward modeling, and a "best card for this merchant" recommendation engine.
 
-PHASE 4 — B2B API (Q3 2026)
-─────────────────────────────
-▸ White-label Reward Transparency API for payment apps
-▸ Bank partnership integrations
-▸ Embedded reward widgets (SDK)
-▸ Revenue model: per-transaction API fee
-```
+**Phase 4 — B2B API (Q3 2026)**
+White-label Reward Transparency API for payment apps, bank partnership integrations, embedded reward widgets (SDK), and a per-transaction API fee revenue model.
 
 ---
 
@@ -422,12 +381,12 @@ PHASE 4 — B2B API (Q3 2026)
 <div align="center">
 
 **Ujjwal Agrawal**
-*Product Manager | Fintech × Consumer × Growth*
+*Product Manager | Fintech x Consumer x Growth*
 
 Building products that make financial systems more transparent and equitable for Indian consumers.
 
 This project was built to demonstrate:
-- **0→1 product thinking** — from insight to shipped MVP
+- **0->1 product thinking** — from insight to shipped MVP
 - **Data-driven research** — user journey analysis, qualitative + quantitative synthesis
 - **PM craft** — PRD writing, persona development, metric design, roadmapping
 - **Execution** — live MVP shipped, auditable dataset, real user feedback
@@ -468,4 +427,3 @@ npm run dev
 [![MVP](https://img.shields.io/badge/MVP-Live-brightgreen)]()
 
 </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
