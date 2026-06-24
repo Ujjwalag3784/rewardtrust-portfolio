@@ -9,8 +9,8 @@
 
 [![Live MVP](https://img.shields.io/badge/Live%20MVP-rewardtrust.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust.vercel.app/)
 [![Dataset Audit](https://img.shields.io/badge/Dataset%20Audit-rewardtrust--audit.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust-audit.vercel.app/)
-[![Case Study](https://img.shields.io/badge/Case%20Study-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/RewardTrust_Case_Study.pdf)
-[![PRD](https://img.shields.io/badge/PRD%20v1.0-PDF-3b82f6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/PRD_document_RewardTrust.pdf)
+[![Case Study](https://img.shields.io/badge/Case%20Study-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FUjjwalag3784%2Frewardtrust-portfolio%2Fmain%2Fdocs%2FRewardTrust_Case_Study.pdf)
+[![PRD](https://img.shields.io/badge/PRD%20v1.0-PDF-3b82f6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FUjjwalag3784%2Frewardtrust-portfolio%2Fmain%2Fdocs%2FPRD_document_RewardTrust.pdf)
 
 [![Built with React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
@@ -357,8 +357,8 @@ White-label Reward Transparency API for payment apps, bank partnership integrati
 
 | Document | Description | Link |
 |---|---|---|
-| **PRD v1.0** | 34-page Product Requirements Document | [View PDF](docs/PRD_document_RewardTrust.pdf) |
-| **Case Study** | 36-page PM Portfolio Case Study | [View PDF](docs/RewardTrust_Case_Study.pdf) |
+| **PRD v1.0** | 34-page Product Requirements Document | [View PDF](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FUjjwalag3784%2Frewardtrust-portfolio%2Fmain%2Fdocs%2FPRD_document_RewardTrust.pdf) |
+| **Case Study** | 36-page PM Portfolio Case Study | [View PDF](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FUjjwalag3784%2Frewardtrust-portfolio%2Fmain%2Fdocs%2FRewardTrust_Case_Study.pdf) |
 | **Dataset** | 160-entry reward rate dataset (Excel) | [Download](assets/RewardTrust_Dataset_2025.xlsx) |
 | **Figma Design** | Full UI flow with design system | [View Figma](https://www.figma.com/design/W0zibobivNgcrEi2tyA1Ey/Trust-Details-Rebuilt?node-id=0-1&t=OtmwJWoKsGgvfW3B-1) |
 | **Thesis Deck** | Research & vision presentation | [View PPTX](assets/RewardTrust_ThesisDeck.pptx) |
