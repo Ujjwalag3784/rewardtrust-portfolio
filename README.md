@@ -1,16 +1,16 @@
 <div align="center">
 
-# 🏆 RewardTrust
-### *The Missing Transparency Layer for Indian UPI Rewards*
+# RewardTrust
+### The Missing Transparency Layer for Indian UPI Rewards
 
 ![RewardTrust Hero](assets/Frame.png)
 
 ---
 
-[![Live MVP](https://img.shields.io/badge/🚀%20Live%20MVP-rewardtrust.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust.vercel.app/)
-[![Dataset Audit](https://img.shields.io/badge/📊%20Dataset%20Audit-rewardtrust--audit.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust-audit.vercel.app/)
-[![Case Study](https://img.shields.io/badge/📄%20Case%20Study-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/RewardTrust_Case_Study.pdf)
-[![PRD](https://img.shields.io/badge/📋%20PRD%20v1.0-PDF-3b82f6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/PRD_document_RewardTrust.pdf)
+[![Live MVP](https://img.shields.io/badge/Live%20MVP-rewardtrust.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust.vercel.app/)
+[![Dataset Audit](https://img.shields.io/badge/Dataset%20Audit-rewardtrust--audit.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust-audit.vercel.app/)
+[![Case Study](https://img.shields.io/badge/Case%20Study-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/RewardTrust_Case_Study.pdf)
+[![PRD](https://img.shields.io/badge/PRD%20v1.0-PDF-3b82f6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/PRD_document_RewardTrust.pdf)
 
 [![Built with React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
@@ -21,32 +21,32 @@
 
 ---
 
-**Product Manager:** Ujjwal Agrawal &nbsp;|&nbsp; **Domain:** Fintech × UPI × Rewards &nbsp;|&nbsp; **Target:** CRED · PhonePe · Razorpay · Jupiter · Fi · Groww
+**Product Manager:** Ujjwal Agrawal &nbsp;|&nbsp; **Domain:** Fintech × UPI × Rewards
 
 </div>
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
-- [The Problem](#-the-problem)
-- [Research & Discovery](#-research--discovery)
-- [The Four Trust Gaps](#-the-four-trust-gaps)
-- [User Personas](#-user-personas)
-- [Jobs To Be Done](#-jobs-to-be-done)
-- [Solution](#-the-solution)
-- [Product Screenshots](#-product-screenshots)
-- [Design System](#-design-system)
-- [Dataset & Audit](#-dataset--audit)
-- [Success Metrics](#-success-metrics)
-- [Technical Architecture](#-technical-architecture)
-- [Product Roadmap](#-product-roadmap)
-- [Documents & Assets](#-documents--assets)
-- [About the PM](#-about-the-pm)
+- [The Problem](#the-problem)
+- [Research & Discovery](#research--discovery)
+- [The Four Trust Gaps](#the-four-trust-gaps)
+- [User Personas](#user-personas)
+- [Jobs To Be Done](#jobs-to-be-done)
+- [Solution](#the-solution)
+- [Product Screenshots](#product-screenshots)
+- [Design System](#design-system)
+- [Dataset & Audit](#dataset--audit)
+- [Success Metrics](#success-metrics)
+- [Technical Architecture](#technical-architecture)
+- [Product Roadmap](#product-roadmap)
+- [Documents & Assets](#documents--assets)
+- [About the PM](#about-the-pm)
 
 ---
 
-## 🔥 The Problem
+## The Problem
 
 > **"I made a UPI payment with my RuPay credit card. Where's my cashback?"**
 
@@ -54,7 +54,7 @@ India has **600M+ UPI users** transacting daily — yet most have no idea whethe
 
 <div align="center">
 
-| 📊 Stat | 💡 Insight |
+| Stat | Insight |
 |---|---|
 | **~95%** of first transactors | Miss their first reward entirely |
 | **>60%** of UPI transactions | Have unclaimed or unrealized rewards |
@@ -68,87 +68,30 @@ Banks and payment apps built the pipes. Nobody built the window.
 
 ---
 
-## 🔬 Research & Discovery
+## Research & Discovery
 
 ### Methodology
-Primary research was conducted using a funnel analysis dataset from a **leading RuPay credit card UPI product**. The dataset covers **20 merchants × 8 payment methods = 160 reward rate entries**, each tagged with confidence tiers (HIGH / MEDIUM / LOW).
 
-### Key Funnel Findings
-
-```
-FUNNEL 1 — Reward Awareness (Pre-Transaction)
-────────────────────────────────────────────────────────────
-Heard of reward program      → 73% of users
-Know their reward rate        → 28% of users
-Check rate before transacting → 11% of users
-
-DROP: 73% → 11%  =  85% awareness-to-action gap
-```
-
-```
-FUNNEL 2 — Post-Transaction Reward Discovery
-────────────────────────────────────────────────────────────
-Transacted with eligible card → 100%
-Received reward notification  →  38%
-Understood the notification   →  21%
-Knew what to do next          →   9%
-
-DROP: 100% → 9%  =  91% end-to-end comprehension gap
-```
-
-```
-FUNNEL 3 — Reward Redemption
-────────────────────────────────────────────────────────────
-Earned a reward               → 100%
-Noticed it in app             →  44%
-Understood redemption steps   →  29%
-Successfully redeemed         →  18%
-
-DROP: 100% → 18%  =  82% redemption failure rate
-```
-
-```
-FUNNEL 4 — Repeat Behavior (Habit Loop)
-────────────────────────────────────────────────────────────
-Had positive first reward experience → 100%
-Repeated reward-motivated payment    →  34%
-Became a regular reward-aware user   →  12%
-
-DROP: 100% → 12%  =  88% habit formation failure rate
-```
+Discovery combined qualitative user interviews with a hand-curated reward rate dataset covering **20 merchants × 8 payment methods = 160 reward rate entries**, each tagged with confidence tiers (HIGH / MEDIUM / LOW). The research focused on how users perceive, discover, and act on rewards across the full payment journey.
 
 ### Research Synthesis
-The problem is not the reward program — it's the **feedback loop**. Users cannot form reward habits because the entire reward experience is opaque, delayed, and fragmented across 3–5 different apps.
+
+The problem is not the reward program — it's the **feedback loop**. Users cannot form reward habits because the entire reward experience is opaque, delayed, and fragmented across 3–5 different apps. Across every stage of the journey — from knowing a reward exists, to receiving it, to redeeming it, to repeating the behaviour — users lose visibility and trust. These breakdowns cluster into four distinct failure modes, captured below as the Four Trust Gaps.
 
 ---
 
-## 🧩 The Four Trust Gaps
+## The Four Trust Gaps
 
-Based on research, four distinct failure modes were identified — the **Four Trust Gaps Framework**:
+Research surfaced four distinct failure modes — the **Four Trust Gaps Framework**:
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    FOUR TRUST GAPS                          │
-├──────────────────┬──────────────────────────────────────────┤
-│ 🔴 ANTICIPATION  │ "Will I earn a reward for THIS payment?"  │
-│    Gap           │ Users don't know reward eligibility       │
-│                  │ before they transact                      │
-├──────────────────┼──────────────────────────────────────────┤
-│ 🟠 DELIVERY      │ "Did my reward actually credit?"          │
-│    Gap           │ No real-time confirmation of reward       │
-│                  │ credit post-transaction                   │
-├──────────────────┼──────────────────────────────────────────┤
-│ 🟡 STATUS        │ "Where is my reward right now?"           │
-│    Gap           │ Zero visibility into pending/processing   │
-│                  │ reward states                             │
-├──────────────────┼──────────────────────────────────────────┤
-│ 🔵 EXPLANATION   │ "Why didn't I get my reward?"             │
-│    Gap           │ No human-readable reason when rewards     │
-│                  │ don't credit as expected                  │
-└──────────────────┴──────────────────────────────────────────┘
-```
+| Trust Gap | User Question | What Breaks |
+|---|---|---|
+| **Anticipation** | *"Will I earn a reward for THIS payment?"* | Users don't know reward eligibility before they transact |
+| **Delivery** | *"Did my reward actually credit?"* | No real-time confirmation of reward credit post-transaction |
+| **Status** | *"Where is my reward right now?"* | Zero visibility into pending or processing reward states |
+| **Explanation** | *"Why didn't I get my reward?"* | No human-readable reason when rewards don't credit as expected |
 
 </div>
 
@@ -156,9 +99,9 @@ Each gap is a product opportunity. RewardTrust is built to close all four.
 
 ---
 
-## 👥 User Personas
+## User Personas
 
-### ⭐ MVP Primary: Divya — The Cautious Optimizer
+### MVP Primary: Divya — The Cautious Optimizer
 
 > *"I use UPI because it's convenient, but I always wonder if I'm leaving money on the table."*
 
@@ -173,7 +116,7 @@ Each gap is a product opportunity. RewardTrust is built to close all four.
 
 ---
 
-### ⭐ MVP Primary: Arjun — The Accidental Rewarder
+### MVP Primary: Arjun — The Accidental Rewarder
 
 > *"I don't care about points, I care about cashback hitting my account."*
 
@@ -204,7 +147,7 @@ Rahul joined UPI credit recently. His first experience sets the tone for his lif
 
 ---
 
-## 🎯 Jobs To Be Done
+## Jobs To Be Done
 
 ```
 When I'm about to make a high-value payment,
@@ -226,7 +169,7 @@ So that I don't feel deceived or lose trust in the product.
 
 ---
 
-## 💡 The Solution
+## The Solution
 
 RewardTrust is a **reward transparency layer** — a companion experience that surfaces reward intelligence at every stage of the payment journey.
 
@@ -236,10 +179,10 @@ RewardTrust is a **reward transparency layer** — a companion experience that s
 
 | Experience | Trust Gap Closed | User Value |
 |---|---|---|
-| 🔮 **Reward Preview** | Anticipation | See exact reward before paying |
-| ✅ **Reward Confirmation** | Delivery | Instant credit confirmation post-payment |
-| 📍 **Reward Status Tracker** | Status | Real-time pending/credited/failed tracking |
-| 💬 **Reward Explainer** | Explanation | Plain-English reason when rewards don't land |
+| **Reward Preview** | Anticipation | See exact reward before paying |
+| **Reward Confirmation** | Delivery | Instant credit confirmation post-payment |
+| **Reward Status Tracker** | Status | Real-time pending/credited/failed tracking |
+| **Reward Explainer** | Explanation | Plain-English reason when rewards don't land |
 
 </div>
 
@@ -252,7 +195,7 @@ RewardTrust is a **reward transparency layer** — a companion experience that s
 
 ---
 
-## 📱 Product Screenshots
+## Product Screenshots
 
 <div align="center">
 
@@ -281,11 +224,11 @@ RewardTrust is a **reward transparency layer** — a companion experience that s
 
 </div>
 
-> 🔗 **Try the live product:** [rewardtrust.vercel.app](https://rewardtrust.vercel.app/)
+> **Try the live product:** [rewardtrust.vercel.app](https://rewardtrust.vercel.app/)
 
 ---
 
-## 🎨 Design System
+## Design System
 
 <div align="center">
 
@@ -307,13 +250,13 @@ RewardTrust is a **reward transparency layer** — a companion experience that s
 
 ---
 
-## 📊 Dataset & Audit
+## Dataset & Audit
 
 The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate entries across 20 merchants and 8 payment methods — the first of its kind in the Indian market.
 
 <div align="center">
 
-[![Open Dataset Audit Tool](https://img.shields.io/badge/🔍%20Open%20Dataset%20Audit-rewardtrust--audit.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust-audit.vercel.app/)
+[![Open Dataset Audit Tool](https://img.shields.io/badge/Open%20Dataset%20Audit-rewardtrust--audit.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://rewardtrust-audit.vercel.app/)
 
 </div>
 
@@ -328,11 +271,11 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 | **Confidence Tiers** | HIGH (verified) · MEDIUM (inferred) · LOW (estimated) |
 | **Update Protocol** | Manual quarterly audits → automated crawlers (Phase 3) |
 
-📥 **Download Dataset:** [RewardTrust_Dataset_2025.xlsx](assets/RewardTrust_Dataset_2025.xlsx)
+**Download Dataset:** [RewardTrust_Dataset_2025.xlsx](assets/RewardTrust_Dataset_2025.xlsx)
 
 ---
 
-## 📈 Success Metrics
+## Success Metrics
 
 ### North Star Metric
 
@@ -378,7 +321,7 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -412,10 +355,10 @@ The MVP is powered by a **hand-curated, audited dataset** of 160 reward rate ent
 
 ---
 
-## 🗺️ Product Roadmap
+## Product Roadmap
 
 ```
-PHASE 1 — MVP (Current ✅)
+PHASE 1 — MVP (Current)
 ─────────────────────────
 ▸ Reward Rate Discovery (20 merchants × 8 methods)
 ▸ Confidence-tiered data display
@@ -449,32 +392,32 @@ PHASE 4 — B2B API (Q3 2026)
 
 ---
 
-## 📁 Documents & Assets
+## Documents & Assets
 
 <div align="center">
 
 | Document | Description | Link |
 |---|---|---|
-| 📋 **PRD v1.0** | 34-page Product Requirements Document | [View PDF](docs/PRD_document_RewardTrust.pdf) |
-| 📄 **Case Study** | 36-page PM Portfolio Case Study | [View PDF](docs/RewardTrust_Case_Study.pdf) |
-| 📊 **Dataset** | 160-entry reward rate dataset (Excel) | [Download](assets/RewardTrust_Dataset_2025.xlsx) |
-| 🎨 **Figma Design** | Full UI flow with design system | [View Figma](https://figma.com) |
-| 🏗️ **Thesis Deck** | Research & vision presentation | [View PPTX](assets/RewardTrust_ThesisDeck.pptx) |
-| 💡 **Why Rewards Exist** | Explainer deck on UPI reward mechanics | [View PPTX](assets/why_reward_exists.pptx) |
+| **PRD v1.0** | 34-page Product Requirements Document | [View PDF](docs/PRD_document_RewardTrust.pdf) |
+| **Case Study** | 36-page PM Portfolio Case Study | [View PDF](docs/RewardTrust_Case_Study.pdf) |
+| **Dataset** | 160-entry reward rate dataset (Excel) | [Download](assets/RewardTrust_Dataset_2025.xlsx) |
+| **Figma Design** | Full UI flow with design system | [View Figma](https://www.figma.com/design/W0zibobivNgcrEi2tyA1Ey/Trust-Details-Rebuilt?node-id=0-1&t=OtmwJWoKsGgvfW3B-1) |
+| **Thesis Deck** | Research & vision presentation | [View PPTX](assets/RewardTrust_ThesisDeck.pptx) |
+| **Why Rewards Exist** | Explainer deck on UPI reward mechanics | [View PPTX](assets/why_reward_exists.pptx) |
 
 </div>
 
 ### Quick Links
 
-🚀 **[Live MVP](https://rewardtrust.vercel.app/)** — Try the product now
+**[Live MVP](https://rewardtrust.vercel.app/)** — Try the product now
 
-🔍 **[Dataset Audit Tool](https://rewardtrust-audit.vercel.app/)** — Explore the reward rate database
+**[Dataset Audit Tool](https://rewardtrust-audit.vercel.app/)** — Explore the reward rate database
 
-💻 **[Source Code](https://github.com/Ujjwalag3784/rewardtrust)** — React + Vite implementation
+**[Source Code](https://github.com/Ujjwalag3784/rewardtrust)** — React + Vite implementation
 
 ---
 
-## 💼 About the PM
+## About the PM
 
 <div align="center">
 
@@ -485,21 +428,18 @@ Building products that make financial systems more transparent and equitable for
 
 This project was built to demonstrate:
 - **0→1 product thinking** — from insight to shipped MVP
-- **Data-driven research** — funnel analysis, qualitative + quantitative synthesis
+- **Data-driven research** — user journey analysis, qualitative + quantitative synthesis
 - **PM craft** — PRD writing, persona development, metric design, roadmapping
 - **Execution** — live MVP shipped, auditable dataset, real user feedback
 
-*Targeting PM roles at:*
-**CRED · PhonePe · Razorpay · Jupiter · Fi · Groww · Zerodha · Swiggy · Amazon**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ujjwalagrawal)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ujjwal-agrawal-113402277/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ujjwalag3784)
 
 </div>
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
 # Clone the repository
@@ -528,3 +468,4 @@ npm run dev
 [![MVP](https://img.shields.io/badge/MVP-Live-brightgreen)]()
 
 </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
